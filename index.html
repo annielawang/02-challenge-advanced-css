@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio Page</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Ang Li</h1>
-        <nav>
-            <ul>
+        <nav class="top">
+            <div class="top-left">
+                <h1>
+                    Ang Li
+                </h1>
+            </div>
+
+            <ul class="top-right">
                 <li>
                     <a href="">About Me</a>
                 </li>
@@ -28,18 +34,18 @@
     </header>
     <main>
         <div>
-            <section>
+            <hero class="my-hero">
                 <h2>Hire Me!</h2>
                 <img src="" alt="">
-            </section>
+            </hero>
         </div>
         <div>
-            <section>
+            <section class="about-me">
                 <h3>About Me</h3>
                 <p></p>
             </section>
 
-            <section>
+            <section class="work">
                 <h3>Work</h3>
                 <div>
                     
@@ -49,9 +55,9 @@
     </main>
 
     <footer>
-        <section>
-            <h3>Contact Me</h3>
-            <div>
+        <section class="contact-me">
+            <h3 class="contact-me-title">Contact Me</h3>
+            <div class="contact-me-details">
                 <ul>
                     <li>
                         <a href=""></a>

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio Page</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    
+    
+<link rel="stylesheet" href="./My Portfolio Page_files/reset.css"><link rel="stylesheet" href="./My Portfolio Page_files/style.css"></head>
+<body class="vsc-initialized">
     <header>
         <nav class="top">
             <div class="top-left">
@@ -18,16 +18,16 @@
 
             <ul class="top-right">
                 <li>
-                    <a href="">About Me</a>
+                    <a href="http://127.0.0.1:5500/index.html">About Me</a>
                 </li>
                 <li>
-                    <a href="">Work</a>
+                    <a href="http://127.0.0.1:5500/index.html">Work</a>
                 </li>
                 <li>
-                    <a href="">Contact Me</a>
+                    <a href="http://127.0.0.1:5500/index.html">Contact Me</a>
                 </li>
                 <li>
-                    <a href="">Resume</a>
+                    <a href="http://127.0.0.1:5500/index.html">Resume</a>
                 </li>
             </ul>
         </nav>
@@ -35,7 +35,7 @@
     <main>
         <div class="hero">
                 <h2>Hire Me!</h2>
-                <img src="./assets/images/hero.jpeg" alt="This is an hero image.">
+                <img src="./My Portfolio Page_files/hero.jpeg" alt="This is an hero image.">
         </div>
         <div>
             <section class="about-me">
@@ -60,27 +60,27 @@
                 <div class="work-imgs">
                     <section id="work-1-section">
                         <h4>Work-1</h4>
-                        <img id="work-1-img" src="./assets/images/work-1.jpeg" alt="This is work-1">
+                        <img id="work-1-img" src="./My Portfolio Page_files/work-1.jpeg" alt="This is work-1">
                     </section>
 
                     <section id="work-2-section">
                         <h4>Work-2</h4>
-                        <img class="work-2-img" src="./assets/images/work-3.jpeg" alt="This is work-2">
+                        <img id="work-2-img" src="./My Portfolio Page_files/work-2.jpeg" alt="This is work-2">
                     </section>
 
                     <section id="work-2-section">
                         <h4>Work-3</h4>
-                        <img class="work-2-img" src="./assets/images/work-3.jpeg" alt="This is work-3">
+                        <img id="work-3-img" src="./My Portfolio Page_files/work-3.jpeg" alt="This is work-3">
                     </section>
 
                     <section id="work-2-section">
                         <h4>Work-4</h4>
-                        <img class="work-2-img" src="./assets/images/work-3.jpeg" alt="This is work-4">
+                        <img id="work-4-img" src="./My Portfolio Page_files/work-4.jpeg" alt="This is work-4">
                     </section>
 
                     <section id="work-2-section">
                         <h4>Work-5</h4>
-                        <img class="work-2-img" src="./assets/images/work-3.jpeg" alt="This is work-5">
+                        <img id="work-5-img" src="./My Portfolio Page_files/work-5.jpeg" alt="This is work-5">
                     </section>   
                 </div>
                     
@@ -94,27 +94,65 @@
             <div class="contact-me-details">
                 <ul>
                     <li>
-                        <a href=""></a>
+                        <a href="http://127.0.0.1:5500/index.html"></a>
                     </li>
 
                     <li>
-                        <a href="">annielawang@gmail.com</a>
+                        <a href="http://127.0.0.1:5500/index.html">annielawang@gmail.com</a>
                     </li>
 
                     <li>
-                        <a href="">Github</a>
+                        <a href="http://127.0.0.1:5500/index.html">Github</a>
                     </li>
 
                     <li>
-                        <a href="">Twitter</a>
+                        <a href="http://127.0.0.1:5500/index.html">Twitter</a>
                     </li>
 
                     <li>
-                        <a href="">Spotify</a>
+                        <a href="http://127.0.0.1:5500/index.html">Spotify</a>
                     </li>
                 </ul>
             </div>
         </section>
     </footer>
-</body>
-</html>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

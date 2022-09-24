@@ -50,6 +50,7 @@
 .hero h2 {
     background-color: aqua;
     font-size: 2rem;
+    width: fit-content;
     position: absolute;
     right: 2rem;
     bottom: 2rem;
@@ -65,14 +66,14 @@
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 50px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(72, 87, 116);
     border-right-style: solid;
     border-right-width: 5px;
     padding: 20px;
     text-align: end;
-    flex: 0 0 300px;
+    flex: 0 0 360px;
 }
 
 .about-me p,
@@ -80,8 +81,8 @@ h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 1rem;
     margin-top: 1rem;
-    line-height: 1.5rem;
-    /* flex: 1 1 auto; */
+    line-height: 1.2rem;
+    flex: 1 1 auto;
 }
 
 .work-imgs {
@@ -91,21 +92,27 @@ h3 {
 
 
 #work-1-section {
+    flex: 2 1 100%;
     display: flex;
-    flex: 0 1 98%;
     flex-direction: column;
 }
 
 #work-2-section {
     flex: 1 1 50%;
+}
+
+#work-1-img {
     /* display: flex; */
-    /* flex-direction: column; */
+    /* flex: 1 1 100%; */
 }
-
-.work-2-img {
-    height: 300px;
-}
-
+/* 
+#work-2-img, 
+#work-3-img,
+#work-4-img,
+#work-5-img {
+    width: 420px;
+    height: 320px;
+} */
 
 
 /* @media screen and (max-width:768px) {

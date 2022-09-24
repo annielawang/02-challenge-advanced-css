@@ -38,6 +38,76 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height:10rem;
+}
+
+.hero h2 {
+    background-color: aqua;
+    font-size: 2rem;
+    width: fit-content;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.about-me, 
+.work, 
+.contact-me {
+    display: flex;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(72, 87, 116);
+    border-right-style: solid;
+    border-right-width: 5px;
+    padding: 20px;
+    text-align: end;
+    flex: 0 0 360px;
+}
+
+.about-me p,
+.work-imgs {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    line-height: 1.2rem;
+    flex: 1 1 auto;
+}
+
+.work-imgs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#work-1-section {
+    flex: 1 1 auto;
+}
+
+#work-1-img {
+    width: 900px;
+}
+
+#work-2-img, 
+#work-3-img,
+#work-4-img,
+#work-5-img {
+    width: 420px;
+    height: 320px;
+}
+
+
 /* @media screen and (max-width:768px) {
     .my-nav {
         width: 50%;
